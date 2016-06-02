@@ -1,8 +1,8 @@
 class Dabble < Formula
   desc "The simplest way to load a Scala library into the REPL"
   homepage "https://github.com/ssanj/dabble"
-  url "https://github.com/ssanj/dabble/releases/download/v0.1.0/dabble", :using => :nounzip
   version "0.1.0"
+  url "https://github.com/ssanj/dabble/releases/download/v#{version}/dabble", :using => :nounzip
   sha256 "554cd5ffd5d198dddf23bbd8d39eaba9d801fa2c427ab765c4bd26669c52f9d4"
   head "https://github.com/ssanj/dabble.git"
 
