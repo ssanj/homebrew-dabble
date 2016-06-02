@@ -5,7 +5,7 @@ This a [brew](https://github.com/mxcl/homebrew) tap containing the formula for i
 
 First, add this tap to your Brew.
 
-    brew tap edwardsmatt/dabble-tap
+    brew tap edwardsmatt/homebrew-dabble
 
 Now you will be able to install the latest dabble release:
 
