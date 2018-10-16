@@ -1,24 +1,13 @@
 class Dabble < Formula
   desc "The simplest way to load a Scala library into the REPL"
   homepage "https://github.com/ssanj/dabble"
-  version "0.1.0"
+  version "0.4.1"
   url "https://github.com/ssanj/dabble/releases/download/v#{version}/dabble", :using => :nounzip
-  sha256 "554cd5ffd5d198dddf23bbd8d39eaba9d801fa2c427ab765c4bd26669c52f9d4"
+  sha256 "c089eab72e6adb863b74029d80ef05e10188128afea5760ded90123efa3122ac"
   head "https://github.com/ssanj/dabble.git"
 
-  if build.head?
-    depends_on :java => "1.7+"
-    depends_on "sbt" => :build
-  end
-
   def install
-    if build.head?
-      # ENV.java_cache
-      system "sbt", "assembly"
-      bin.install "target/scala-2.11/dabble" => "dabble"
-    else
       bin.install "dabble" => "dabble"
-    end
   end
 
   test do
